@@ -39,5 +39,6 @@ Time spent: `20`
 
 ### Walkthrough
 
-
+- 5sdemo.gif
+- 6demo.gif
 
