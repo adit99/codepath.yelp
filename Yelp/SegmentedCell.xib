@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="codepath.segmentedcell" rowHeight="76" id="KGk-i7-Jjw" customClass="SegmentedCell" customModule="Yelp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXv-mE-xPC">
+                        <rect key="frame" x="37" y="27" width="35.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="clM-L1-UgZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.2052155601" blue="0.15941524600000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="wq7-35-zLE">
+                        <rect key="frame" x="112" y="24" width="190.5" height="29"/>
+                        <segments>
+                            <segment title="First"/>
+                            <segment title="Second"/>
+                            <segment title="Third"/>
+                        </segments>
+                    </segmentedControl>
+                </subviews>
+                <color key="tintColor" red="1" green="0.2052155601" blue="0.15941524600000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="wq7-35-zLE" firstAttribute="leading" secondItem="aXv-mE-xPC" secondAttribute="trailing" constant="40" id="Jst-pQ-dff"/>
+                    <constraint firstItem="aXv-mE-xPC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="27" id="R1x-3u-9eB"/>
+                    <constraint firstAttribute="trailing" secondItem="wq7-35-zLE" secondAttribute="trailing" constant="17" id="RIq-WK-jdC"/>
+                    <constraint firstItem="wq7-35-zLE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="ZOy-kS-UK5"/>
+                    <constraint firstItem="aXv-mE-xPC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="37" id="qIy-5b-afW"/>
+                    <constraint firstAttribute="bottom" secondItem="wq7-35-zLE" secondAttribute="bottom" constant="23.5" id="uQ0-bJ-5g7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="Label" destination="aXv-mE-xPC" id="41F-38-36N"/>
+                <outlet property="SegmentControl" destination="wq7-35-zLE" id="68z-UF-R1I"/>
+            </connections>
+            <point key="canvasLocation" x="250" y="256"/>
+        </tableViewCell>
+    </objects>
+</document>
