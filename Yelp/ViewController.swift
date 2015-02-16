@@ -306,7 +306,7 @@ class ViewController: UITableViewController, FiltersViewControllerDelegate, CLLo
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         if (indexPath.row == (self.businessesArray!.count - 1)) && (self.offset < 1000) {
             self.offset! += 20
-            reload()
+            reload(search : self.searchBar!.text)
         }
     }
     
