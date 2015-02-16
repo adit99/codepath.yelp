@@ -29,6 +29,14 @@ Time spent: `20`
    - [ ] Categories should show a subset of the full list with a "See All" row to expand. Category list is here: http://www.yelp.com/developers/documentation/category_list (Links to an external site.)
 - [ ] Implement the restaurant detail page.
 
+#### Other Optionals
+- [x] Using CoreLocation to get users location 
+
+#### Notes
+- Main View Controller logic has gotten a little convoluted, could use a re-write/refactor
+- App needs model classes or consistent use of models across various view controllers to scale
+- Auto-layout warnings not completely fixed 
+
 ### Walkthrough
 
 
